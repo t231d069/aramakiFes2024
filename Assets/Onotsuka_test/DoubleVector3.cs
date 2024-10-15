@@ -7,9 +7,9 @@ public class DoubleVector3 : MonoBehaviour
     public double x, y, z;
 
     public DoubleVector3(Vector3 v) {
-        this.x = (double)x;
-        this.y = (double)y;
-        this.z = (double)z;
+        this.x = (double)v.x;
+        this.y = (double)v.y;
+        this.z = (double)v.z;
     }
     public DoubleVector3(double x, double y, double z) {
         this.x = x;

@@ -80,7 +80,7 @@ public class Joycon
     private Int16[] gyr_neutral_right = { 1, 27, -9 };    // ジャイロの再補正値
     private Vector3 acc_lowpass = Vector3.zero;    // ハイパスフォイルタの値
     private Vector3 acc_highpass = Vector3.zero;   // ローパスフィルタの値
-    private float lowpassalpha = 0.99f;        // ローパスフィルタの係数
+    // private float lowpassalpha = 0.99f;        // ローパスフィルタの係数
     private Vector3 acc_r_world;          // ワールド座標の加速度
     private Vector3 acc_ac_world;         // 動的加速度
     private Vector3 acc_gravity_world = new Vector3(0, 4075, 0);  // 重力加速度 4096
