@@ -12,7 +12,6 @@ using Unity.VisualScripting;
 using Windows.Devices.HumanInterfaceDevice;
 using Windows.Devices.Enumeration;
 using Windows.Storage;
-Windows.System.Threading;
 #endif
 
 
@@ -43,7 +42,7 @@ public class JoyconManager: MonoBehaviour
         if (instance != null) Destroy(gameObject);
         instance = this;
 
-#if WINDOWS_UWP
+/*#if WINDOWS_UWP
 		Debug.Log("WINDOWS_UWP");
 		Task.Run(async () =>
 		{
@@ -72,7 +71,7 @@ public class JoyconManager: MonoBehaviour
 				Debug.Log(e.ToString());
 			}
 		});
-#endif
+#endif*/
 
         int i = 0;
 

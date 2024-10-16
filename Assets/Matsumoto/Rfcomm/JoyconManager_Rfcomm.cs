@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-#if WINDOWS_UWP
+#if ENABLE_WINMD_SUPPORT
 using Windows.Devices.Bluetooth;
 using Windows.Devices.Bluetooth.Rfcomm;
 #endif
@@ -14,8 +14,8 @@ public class JoyconManager_Rfcomm : MonoBehaviour
     {
         Debug.Log("Platform : " + Application.platform);
 
-#if WINDOWS_UWP
-        Debug.Log("Platform is WINDOWS_UWP");
+#if ENABLE_WINMD_SUPPORT
+        Debug.Log("ENABLE_WINMD_SUPPORT");
 #endif
 
     }
